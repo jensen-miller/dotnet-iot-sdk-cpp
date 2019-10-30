@@ -1,7 +1,19 @@
-﻿cmake_minimum_required (VERSION 3.8)
+﻿#[[
+===============================================================================
+	.NET IoT SDK - C++
 
-set(PROJECT_NAME "templated-project")
-set(PROJECT_LIB_NAME "project-library-name")
+	Provides a platform abstract layer for the interface between dotnet/iot and
+	any framework in c++.
+
+	Copyright (C) 2019 Jensen Miller.
+	Licensed under the GNU GPLv3 license.
+===============================================================================
+]]
+		
+cmake_minimum_required (VERSION 3.8)
+
+set(PROJECT_NAME "dotnet-iot-sdk-cpp")
+set(PROJECT_LIB_NAME "lib_dotnet_iot_sdk")
 
 #
 #	Config
