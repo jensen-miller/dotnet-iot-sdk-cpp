@@ -1,4 +1,6 @@
-﻿#include <System\\Device\\Gpio.h>
+﻿#include <dotnetiot.h>
+
+#include <System\\Device\\Gpio.h>
 using namespace System::Device::Gpio;
 #include <System\\Threading.h>
 using namespace System::Threading;
