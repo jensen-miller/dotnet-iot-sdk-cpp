@@ -1,4 +1,5 @@
 #include <System\\Threading.h>
+#include <Arduino.h>
 
 namespace System
 {
@@ -6,7 +7,7 @@ namespace System
 	{
 		void Thread::Sleep(int millisecondsTimeout)
 		{
-
+			delay(millisecondsTimeout);
 		}
 	}
 }

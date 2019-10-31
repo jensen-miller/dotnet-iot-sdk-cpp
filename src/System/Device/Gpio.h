@@ -132,7 +132,7 @@ namespace System
 				//     The pin number in the controller's numbering scheme.
 				inline void OpenPin(int pinNumber)
 				{
-				
+					
 				}
 				//
 				// Summary:
@@ -146,7 +146,17 @@ namespace System
 				//     The mode to be set.
 				inline void OpenPin(int pinNumber, PinMode mode)
 				{
-					
+					switch (mode)
+					{
+					case System::Device::Gpio::PinMode::Input:
+						pinMode(pinNumber, INPUT);
+						break;
+					case System::Device::Gpio::PinMode::Output:
+						pinMode(pinNumber, OUTPUT);
+						break;
+					default:
+						break;
+					}
 				}
 				//
 				// Summary:
@@ -289,7 +299,17 @@ namespace System
 				//     The value to be written to the pin.
 				inline void Write(int pinNumber, PinValue value)
 				{
-
+					switch (value)
+					{
+					case System::Device::Gpio::PinValue::Low:
+						digitalWrite(pinNumber, LOW);
+						break;
+					case System::Device::Gpio::PinValue::High:
+						digitalWrite(pinNumber, HIGH);
+						break;
+					default:
+						break;
+					}					
 				}
 				//
 				// Summary:
